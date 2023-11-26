@@ -3,13 +3,26 @@
 }
 
 body {
-  background-image: linear-gradient(to right, rgb(162, 131, 131) , rgb(0, 102, 255));
+  background-image: linear-gradient(to right, rgb(162, 131, 131) , rgb(170, 175, 183));
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-
+/* for the header img*/
+.center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 1;
+  margin: auto;
+  z-index: -1; /* Send the image to the background */
+  opacity: 0.8; /* Adjust the opacity */
+  width: 100%; /*the image covers the entire header */
+  height: 20%;
+  object-fit: cover; /* Maintain the aspect ratio */
+}
 .header h1 {
   display: inline-block;
   font-size: 40px
@@ -18,20 +31,22 @@ body {
 .header h1 .Yovcheva {
   color: deeppink;
 }
-/* .header nav {
+ .header nav {
   padding: 15px;
   float: right;
   margin-right: 20px;
 }
 
-.header nav ul {
+.navbar nav {
   list-style-type: none;
+
 }
 
-.header nav ul li {
+.menuItems a {
   display: inline-block;
   margin-left: 25px;
-} */
+  
+} 
 h1,
 h2,
 h3,
@@ -45,16 +60,17 @@ p {
   margin: 0;
 }
 
-.navbar {
+/*.navbar {
   display: flex;
   justify-content: flex-end;
-  /* flex-direction: row; */
-}
+  /* flex-direction: row; 
+}*/
 
 
-.menuItems a{
+
+/*.menuItems a{
   display: inline-block;
-  /* flex-direction: row; */
+  flex-direction: row;
   justify-content: space-between;
   margin-right: 5px;
-}
+}*/
