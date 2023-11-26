@@ -9,7 +9,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-/* for the header img*/
+/* for img in header element*/
 .center {
   position: absolute;
   top: 0;
@@ -17,11 +17,11 @@ body {
   right: 0;
   bottom: 1;
   margin: auto;
-  z-index: -1; /* Send the image to the background */
-  opacity: 0.8; /* Adjust the opacity */
+  z-index: -1; /* Sends the image to the background */
+  opacity: 0.8;
   width: 100%; /*the image covers the entire header */
   height: 20%;
-  object-fit: cover; /* Maintain the aspect ratio */
+  object-fit: cover; /* Maintains the aspect ratio */
 }
 .header h1 {
   display: inline-block;
@@ -42,13 +42,43 @@ body {
 
 }
 
+/* Style the menu items */
+.menuItems {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+
+}
 .menuItems a {
+  text-decoration: none;
+  color: #090808; 
+  padding: 10px 20px;
   display: inline-block;
-  margin-left: 25px;
+  font-size: 20px;
+  font-weight: bold;/*display: inline-block;
+  margin-left: 25px;*/
   
 } 
-h1,
-h2,
+.page-wrapper {
+  max-width: 1000px; /* Adjusting the maximum width of the page */
+  margin: 0 auto; /* Centering the page horizontally */
+}
+.page-wrapper h2 {
+  text-align: center;
+
+}
+/* Style the page section */
+.page-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.float-left {
+  justify-content: left;
+  width:200px;
+  height: fit-content;
+}
 h3,
 h4,
 h5,
