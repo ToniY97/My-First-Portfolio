@@ -9,7 +9,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-/* for img in header element*/
+/* for menu items in header element*/
 .center {
   position: absolute;
   top: 0;
@@ -17,10 +17,6 @@ body {
   right: 0;
   bottom: 1;
   margin: auto;
-  z-index: -1; /* Sends the image to the background */
-  opacity: 0.8;
-  width: 100%; /* for the image covers the entire header */
-  height: 20%;
   object-fit: cover; /* Maintains the aspect ratio */
 }
 .header h1 {
@@ -59,6 +55,14 @@ body {
   margin-left: 25px;*/
   
 } 
+.hero-banner {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("./background-polygonal-pattern.jpg");
+  background-size: cover;
+  background-position: center;
+}
 .page-wrapper {
   max-width: 1100px; /* Adjusting the maximum width of the page */
   max-height: fit-content;
@@ -113,29 +117,33 @@ body {
 }
 .pythonProject {
   grid-area: pythonProject; /* Places it in the specified grid area */
-  padding: 20px;
-  text-align: center; /* Centers the text within the item */
+  background-image: url(./02-portfolio-1.jpg);
 }
 .firstProject {
   grid-area: firstProject; 
-  padding: 20px;
-  border: 1px solid #ccc;
-  text-align: center; 
+  background-image: url(./02-portfolio-2.jpg);
 }
 
 .workProject1 {
   grid-area: workProject1; 
-  padding: 20px;
-  border: 1px solid #ccc;
-  text-align: center; 
+  background-image: url(./02-portfolio-3.jpg);
 }
 
 .workProject2 {
   grid-area: workProject2; 
-  padding: 20px;
-  border: 1px solid #ccc;
-  text-align: center; 
+  background-image: url(./02-portfolio-4.jpg);
 }
+
+.firstProject {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
 
 
 h3,
