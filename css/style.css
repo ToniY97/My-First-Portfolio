@@ -80,7 +80,7 @@ body {
   padding: 20px;
   background-color: #f0f0f0;
   border-radius: 20px;
-  border-left: 4px solid #b88cb0; /* Sets the left border colour for margin */
+  
 }
 /* style image*/
 .float-left {
@@ -96,14 +96,12 @@ body {
   padding-left: 20px;
   margin-top: 3px;
   margin-bottom: 3px;
-  background-color: #f0cfcf; /* Sets a background color for the margin */
-  ;
+  
 }
 
 /* align items in grid*/
 .gridContainer {
   display: grid;
-  border-left: 4px solid #b88cb0; /* Set the left border color for margin */
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 
@@ -139,9 +137,7 @@ body {
   text-align: center; 
 }
 
-.page-section-contact {
-  border-left: 5px solid #b88cb0; /* Set the left border color for margin */
-}
+
 h3,
 h4,
 h5,
@@ -152,6 +148,7 @@ h6 {
 p {
   margin: 0;
 }
+ 
 
 /*.navbar {
   display: flex;
