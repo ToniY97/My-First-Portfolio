@@ -60,24 +60,43 @@ body {
   
 } 
 .page-wrapper {
-  max-width: 1000px; /* Adjusting the maximum width of the page */
+  max-width: 1100px; /* Adjusting the maximum width of the page */
+  max-height: fit-content;
   margin: 0 auto; /* Centering the page horizontally */
 }
+/* centers h2 element within wrapper*/
 .page-wrapper h2 {
-  text-align: center;
+  text-align:  center;
+  margin-top: 0;
 
 }
-/* Style the page section */
-.page-section {
+/* Styles the about me section */
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
   padding: 20px;
   background-color: #f0f0f0;
+  border-radius: 20px;
 }
-
+/* style image*/
 .float-left {
   justify-content: left;
   width:200px;
   height: fit-content;
+  border: 10px groove #f59696; /* adds border for the photo frame */
+  border-radius: 200px; /* Makes the image round */
+  
+
+}
+.page-section p {
+  padding-left: 20px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  /*border-left: 4px solid #b88cb0; /* Set the left border color for margin */
+  background-color: #f0cfcf; /* Set a background color for the margin */
+  ;
 }
 h3,
 h4,
