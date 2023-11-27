@@ -19,7 +19,7 @@ body {
   margin: auto;
   z-index: -1; /* Sends the image to the background */
   opacity: 0.8;
-  width: 100%; /*the image covers the entire header */
+  width: 100%; /* for the image covers the entire header */
   height: 20%;
   object-fit: cover; /* Maintains the aspect ratio */
 }
@@ -42,7 +42,7 @@ body {
 
 }
 
-/* Style the menu items */
+/* Styles the menu items */
 .menuItems {
   list-style: none;
   display: flex;
@@ -63,15 +63,16 @@ body {
   max-width: 1100px; /* Adjusting the maximum width of the page */
   max-height: fit-content;
   margin: 0 auto; /* Centering the page horizontally */
+
 }
 /* centers h2 element within wrapper*/
 .page-wrapper h2 {
-  text-align:  center;
-  margin-top: 0;
-
+  text-align: left;
+  margin-top: 1;
 }
+
 /* Styles the about me section */
-#about {
+#aboutMe {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,6 +80,7 @@ body {
   padding: 20px;
   background-color: #f0f0f0;
   border-radius: 20px;
+  border-left: 4px solid #b88cb0; /* Sets the left border colour for margin */
 }
 /* style image*/
 .float-left {
@@ -94,9 +96,51 @@ body {
   padding-left: 20px;
   margin-top: 3px;
   margin-bottom: 3px;
-  /*border-left: 4px solid #b88cb0; /* Set the left border color for margin */
-  background-color: #f0cfcf; /* Set a background color for the margin */
+  background-color: #f0cfcf; /* Sets a background color for the margin */
   ;
+}
+
+/* align items in grid*/
+.gridContainer {
+  display: grid;
+  border-left: 4px solid #b88cb0; /* Set the left border color for margin */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+     "pythonProject pythonProject pythonProject"
+     "firstProject workProject1 workProject1 "
+     "workProject2 workProject2 workProject2"
+  ;
+  
+}
+.pythonProject {
+  grid-area: pythonProject; /* Places it in the specified grid area */
+  padding: 20px;
+  text-align: center; /* Centers the text within the item */
+}
+.firstProject {
+  grid-area: firstProject; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center; 
+}
+
+.workProject1 {
+  grid-area: workProject1; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center; 
+}
+
+.workProject2 {
+  grid-area: workProject2; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center; 
+}
+
+.page-section-contact {
+  border-left: 5px solid #b88cb0; /* Set the left border color for margin */
 }
 h3,
 h4,
