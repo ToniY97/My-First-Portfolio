@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: linear-gradient(to right, rgb(162, 131, 131) , rgb(170, 175, 183));
+  background-image: linear-gradient(to right, rgb(254, 252, 252) , rgb(172, 200, 245));
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -25,7 +25,7 @@ body {
 }
 
 .header h1 .Yovcheva {
-  color: deeppink;
+  color: rgb(30, 20, 255);
 }
  .header nav {
   padding: 15px;
@@ -115,26 +115,26 @@ body {
   ;
   
 }
-.pythonProject {
+#pythonProject {
   grid-area: pythonProject; /* Places it in the specified grid area */
   background-image: url(./02-portfolio-1.jpg);
 }
-.firstProject {
+#firstProject {
   grid-area: firstProject; 
   background-image: url(./02-portfolio-2.jpg);
 }
 
-.workProject1 {
+#workProject1 {
   grid-area: workProject1; 
   background-image: url(./02-portfolio-3.jpg);
 }
 
-.workProject2 {
+#workProject2 {
   grid-area: workProject2; 
   background-image: url(./02-portfolio-4.jpg);
 }
 
-.firstProject {
+.gridContainerArea {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -146,7 +146,14 @@ body {
 
 
 
-h3,
+h3 {
+  background-color: rgba(245, 245, 248, 0.594);
+  padding: 15px;
+  height: 25px;
+  color: rgb(7, 0, 0);
+  font-size: 18px;
+  border-bottom: 5px solid rgba(245, 245, 248, 0.594);
+}
 h4,
 h5,
 h6 {
