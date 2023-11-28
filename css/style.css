@@ -63,50 +63,33 @@ body {
   background-size: cover;
   background-position: center;
 }
+#id h2 {
+  
+  color: #f0f0f0;
+}
 .page-wrapper {
   max-width: 1100px; /* Adjusting the maximum width of the page */
   max-height: fit-content;
   margin: 0 auto; /* Centering the page horizontally */
 
 }
-/* centers h2 element within wrapper*/
-.page-wrapper h2 {
-  text-align: left;
-  margin-top: 1;
-}
 
-/* Styles the about me section */
-#aboutMe {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #f0f0f0;
-  border-radius: 20px;
-  
-}
-/* style image*/
+/* styles image*/
 .float-left {
-  justify-content: left;
+  margin-left: 400px;
   width:200px;
   height: fit-content;
-  border: 10px groove #f59696; /* adds border for the photo frame */
+  border: 10px groove #9696f5; /* adds border for the photo frame */
   border-radius: 200px; /* Makes the image round */
   
 
 }
-.page-section p {
-  padding-left: 20px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  
-}
+
 
 /* align items in grid*/
 .gridContainer {
   display: grid;
-  margin: 0px 18%;
+  margin: 0px 15%;
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 200px 150px 200px;
   grid-template-areas: 
@@ -145,11 +128,21 @@ body {
   align-content: end;
 }
 
+.footer {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
 
+/* centers h2 element within wrapper*/
+h2 {
+  text-align: left;
+  margin-top: 1;
+}
 
 h3 {
   background-color: rgba(245, 245, 248, 0.594);
-  padding: 15px;
+  padding: 20px;
   height: 25px;
   color: rgb(7, 0, 0);
   font-size: 18px;
@@ -162,7 +155,11 @@ h6 {
 }
 
 p {
-  margin: 0;
+  margin: 0 15%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  justify-content: flex-end;
 }
  
 
