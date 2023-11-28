@@ -106,8 +106,9 @@ body {
 /* align items in grid*/
 .gridContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  margin: 0px 18%;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px 150px 200px;
   grid-template-areas: 
      "pythonProject pythonProject pythonProject"
      "firstProject workProject1 workProject1 "
