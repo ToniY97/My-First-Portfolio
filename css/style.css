@@ -81,10 +81,7 @@ body {
   height: fit-content;
   border: 10px groove #9696f5; /* adds border for the photo frame */
   border-radius: 200px; /* Makes the image round */
-  
-
 }
-
 
 /* align items in grid*/
 .gridContainer {
@@ -128,10 +125,17 @@ body {
   align-content: end;
 }
 
+#contact {
+  list-style-type: none;
+}
 .footer {
-  list-style: none;
   display: flex;
   justify-content: center;
+  justify-content: space-evenly;
+  color: #090808; 
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* centers h2 element within wrapper*/
