@@ -59,14 +59,11 @@ body {
   height: 200px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url("./background-polygonal-pattern.jpg");
+  background-image: url("./02-hero-bg.jpg");
   background-size: cover;
   background-position: center;
 }
-#id h2 {
-  
-  color: #f0f0f0;
-}
+
 .page-wrapper {
   max-width: 1100px; /* Adjusting the maximum width of the page */
   max-height: fit-content;
@@ -152,11 +149,6 @@ h3 {
   font-size: 18px;
   border-bottom: 5px solid rgba(245, 245, 248, 0.594);
 }
-h4,
-h5,
-h6 {
-  margin: 0;
-}
 
 p {
   margin: 0 15%;
@@ -165,19 +157,33 @@ p {
   border-radius: 20px;
   justify-content: flex-end;
 }
- 
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    display: none;
+  }
+  .menuItems {
+    margin-left: auto;
+  }
+}
 
-/*.navbar {
-  display: flex;
-  justify-content: flex-end;
-  /* flex-direction: row; 
-}*/
-
-
-
-/*.menuItems a{
-  display: inline-block;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-right: 5px;
-}*/
+@media only screen and (max-width: 600px) {
+  .navbar {
+    position: static;
+    margin: 20px;
+  }
+  .gridContainer {
+    grid-template-areas:
+    "pythonProject firstPorject"
+    "firstProject1 workProject2";
+  }
+  #work {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "Spotify Quiz Game"
+      "Horiseon Project"
+      "Project to follow"
+      "Project to follow"
+    ;
+  }
+}
